@@ -1,0 +1,16 @@
+
+server:
+  port: 8090
+
+spring:
+  application:
+    name: spring-boot-admin-test
+  security:
+    user:
+      name: ${ADMIN_SERVER_USERNAME}
+      password: ${ADMIN_SERVER_PASSWORD}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
