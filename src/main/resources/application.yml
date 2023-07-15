@@ -9,7 +9,7 @@ server:
 
 spring:
   application:
-    name: spring-boot-admin-test
+    name: spring-boot-admin-server
   security:
     user:
       name: ${ADMIN_SERVER_USERNAME}
@@ -19,9 +19,3 @@ spring:
       ui:
         poll-timer:
           logfile: 30000    # logfile ?? ??. 30?? ???
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
